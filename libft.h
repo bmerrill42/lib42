@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/01 20:57:29 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/09 16:33:52 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/12 13:47:22 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,7 @@ void	ft_bzero(void *s, size_t len);
 void	ft_memdel(void **ap);
 char	*ft_strcat(char *s1, const char *s2);
 void	*ft_memalloc(size_t size);
+char	*ft_strnew(size_t size);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
 #endif
