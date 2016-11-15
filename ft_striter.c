@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 15:22:18 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/09 15:55:07 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/12 16:05:05 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_striter(char *s, void (*f)(char *))
 {
 	char *sc;
+
 	sc = s;
 	while (*sc)
 	{

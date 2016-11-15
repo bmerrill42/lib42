@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 13:49:16 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/09 13:50:45 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/14 16:22:14 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		isspace(char a)
 		return (0);
 }
 
-int		ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
 	char			current_char;
 	unsigned int	number;

@@ -6,14 +6,15 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 14:30:40 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/08 14:35:38 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/12 16:10:00 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while(0 < n)
+	while (0 < n)
 	{
 		if (*s1 != *s2)
 			return (*(unsigned char *)s1 - *(unsigned char *)s2);

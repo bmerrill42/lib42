@@ -6,13 +6,13 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 13:28:15 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/07 13:28:40 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/14 15:34:08 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strbrk(const char *s1, const char *s2)
+char	*ft_strpbrk(const char *s1, const char *s2)
 {
 	const char *sc1;
 	const char *sc2;
@@ -29,5 +29,5 @@ char	*ft_strbrk(const char *s1, const char *s2)
 		}
 		++sc1;
 	}
-	return (0);
+	return (NULL);
 }
