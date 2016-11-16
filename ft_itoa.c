@@ -6,13 +6,13 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/11 14:18:43 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/12 13:34:36 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/15 15:40:53 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*assign_char(long n, char *str)
+static char	*assign_char(long n, char *str)
 {
 	int	c;
 
@@ -28,7 +28,7 @@ char	*assign_char(long n, char *str)
 	return (str);
 }
 
-int		digits(long i)
+static int			digits(long i)
 {
 	int	r;
 
@@ -41,7 +41,7 @@ int		digits(long i)
 	return (r);
 }
 
-char	*iszero(void)
+static char		*iszero(void)
 {
 	char	*zero;
 
@@ -50,7 +50,7 @@ char	*iszero(void)
 	return (zero);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*str;
 	int		negative;

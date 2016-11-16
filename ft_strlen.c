@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/01 15:58:27 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/07 13:50:12 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/15 13:56:08 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	char *copy;
+	size_t	length;
 
-	copy = (char *)str;
-	if (*copy == '\0')
-		return (0);
-	else
-	{
-		copy++;
-		return (1 + ft_strlen(copy));
-	}
+	length = 0;
+	while (str[length])
+		length++;
+	return (length);
 }

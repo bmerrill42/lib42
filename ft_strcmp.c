@@ -6,11 +6,11 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/01 16:44:18 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/01 21:40:24 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/14 17:10:54 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(const char *string1, const char *string2)
+int	ft_strcmp(const char *string1, const char *string2)
 {
 	const unsigned char	*stringcopy1;
 	const unsigned char	*stringcopy2;
