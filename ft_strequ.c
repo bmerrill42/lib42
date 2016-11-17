@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/01 22:49:28 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/07 13:52:22 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/17 10:11:19 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
-	if (!s1)
+	if (!s1 || !s2)
 		return (0);
 	else
 		return (!ft_strcmp(s1, s2));

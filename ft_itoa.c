@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/11 14:18:43 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/15 15:40:53 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/17 10:25:46 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static char	*assign_char(long n, char *str)
 	return (str);
 }
 
-static int			digits(long i)
+static int	digits(long i)
 {
 	int	r;
 
@@ -41,7 +41,7 @@ static int			digits(long i)
 	return (r);
 }
 
-static char		*iszero(void)
+static char	*iszero(void)
 {
 	char	*zero;
 

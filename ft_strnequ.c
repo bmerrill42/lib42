@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/14 14:27:34 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/14 15:21:06 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/17 10:11:52 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	if (!s1)
+	if (!s1 || !s2)
 		return (0);
 	else
 		return (!ft_strncmp(s1, s2, n));

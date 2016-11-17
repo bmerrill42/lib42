@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_strcspn.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/12 13:52:33 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/17 10:13:22 by bmerrill         ###   ########.fr       */
+/*   Created: 2016/11/14 15:40:57 by bmerrill          #+#    #+#             */
+/*   Updated: 2016/11/15 14:27:14 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+size_t	ft_strcspn(const char *s1, const char s2)
 {
-	char	*substr;
+	const char	*sc1;
 
-	if (!s)
-		return (NULL);
-	if (!(substr = ft_strnew(len)))
-		return (NULL);
-	ft_strncpy(substr, s + start, len);
-	return (substr);
+	sc1 = s1;
+	while (*sc1 != '\0')
+	{
+		if (*sc1 == s2)
+			return (sc1 - s1);
+		++sc1;
+	}
+	return (sc1 - s1);
 }

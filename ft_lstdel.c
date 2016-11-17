@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/12 13:52:33 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/17 10:13:22 by bmerrill         ###   ########.fr       */
+/*   Created: 2016/11/16 13:04:21 by bmerrill          #+#    #+#             */
+/*   Updated: 2016/11/16 13:32:17 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	char	*substr;
-
-	if (!s)
-		return (NULL);
-	if (!(substr = ft_strnew(len)))
-		return (NULL);
-	ft_strncpy(substr, s + start, len);
-	return (substr);
+	if ((*alst) == NULL)
+		return ;
+	ft_lstdel(&((*alst)->next), del);
+	ft_lstdelone(alst, del);
 }

@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_wordcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/12 13:52:33 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/17 10:13:22 by bmerrill         ###   ########.fr       */
+/*   Created: 2016/11/15 14:11:55 by bmerrill          #+#    #+#             */
+/*   Updated: 2016/11/15 14:48:38 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+int	ft_wordcount(char const *str, char c)
 {
-	char	*substr;
+	int flag;
+	int count;
 
-	if (!s)
-		return (NULL);
-	if (!(substr = ft_strnew(len)))
-		return (NULL);
-	ft_strncpy(substr, s + start, len);
-	return (substr);
+	flag = 0;
+	count = 0;
+	while (*str != '\0')
+	{
+		if (*str == c)
+		{
+			count += flag;
+			flag = 0;
+		}
+		else
+			flag = 1;
+		str++;
+	}
+	count += flag;
+	return (count);
 }
