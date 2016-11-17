@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/01 20:57:29 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/16 10:40:07 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/17 12:08:07 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,20 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+typedef char		t_stackelem;
+typedef struct		s_stack
+{
+	t_stackelem		*contents;
+	int				top;
+	int				max_size;
+}					t_stack;
 
+void				ft_stackpush(t_stack *stack, t_stackelem element);
+t_stackelem			ft_stackpop(t_stack *stack);
+int					ft_stackisfull(t_stack *stack);
+int					ft_stackisempty(t_stack *stack);
+void				ft_stackinit(t_stack *stack, int maxsize);
+void				ft_stackdestroy(t_stack *stack);
 int					ft_atoi(char *str);
 void				ft_bzero(void *s, size_t len);
 int					ft_isalnum(int c);

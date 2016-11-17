@@ -9,7 +9,8 @@ FILENAMES = ft_atoi ft_bzero ft_isalnum ft_isalpha ft_isascii ft_isdigit\
 			ft_strncmp ft_strncpy ft_strnequ ft_strnew ft_strnstr ft_strrchr\
 			ft_strsplit ft_strspn ft_strstr ft_strsub ft_strtrim ft_tolower\
 			ft_toupper ft_wordcount ft_lstadd ft_lstdel ft_lstdelone\
-			ft_lstiter ft_lstmap ft_lstnew
+			ft_lstiter ft_lstmap ft_lstnew ft_stackpush ft_stackpop\
+			ft_stackisempty ft_stackinit ft_stackdestroy ft_stackisfull
 CFILES = $(addsuffix .c, $(FILENAMES))
 OFILES = $(addsuffix .o, $(FILENAMES))
 
