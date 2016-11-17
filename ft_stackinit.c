@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 11:49:29 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/17 12:08:50 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/17 12:42:50 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_stackinit(t_stack *stack, int maxsize)
 {
 	t_stackelem *newstuff;
+
 	if (!(newstuff = (t_stackelem *)malloc(sizeof(t_stackelem) * maxsize)))
 	{
 		ft_putendl_fd("not enough memory", 2);

@@ -6,7 +6,7 @@
 /*   By: bmerrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 11:46:01 by bmerrill          #+#    #+#             */
-/*   Updated: 2016/11/17 11:49:23 by bmerrill         ###   ########.fr       */
+/*   Updated: 2016/11/17 12:42:29 by bmerrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_stackdestroy(t_stack *stack)
 {
-		free(stack->contents);
-		stack->contents = NULL;
-		stack->max_size = 0;
-		stack->top = -1;
+	free(stack->contents);
+	stack->contents = NULL;
+	stack->max_size = 0;
+	stack->top = -1;
 }
