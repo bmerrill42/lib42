@@ -1202,57 +1202,56 @@ Here is a description of the fields of the t&#95;list struct:
 -   content&#95;size : The size of the data stored. The void &#42; type doesn’t allow you to know the size of the pointed data, as a consequence, it is necessary to save its size. For instance, the size of the string "42" is 3 bytes and the 32bits integer 42 has a size of 4 bytes.
 -   next : The next link’s address or NULL if it’s the last link.
 
-The following functions will allow you to manipulate your lists more easilly.
+The following functions will allow you to manipulate your lists more easily.
 
-\*ft&#95;lstnew
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="left">Prototype</td>
-<td class="left">t&#95;list &#42; ft&#95;lstnew(void const &#42;content, size&#95;t content&#95;size);</td>
-</tr>
-
-
-<tr>
-<td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content&#95;size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content&#95;size is initialized to 0 even if the parameter content&#95;size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL.</td>
-</tr>
-
-
-<tr>
-<td class="left">Param. #1</td>
-<td class="left">The content to put in the new link.</td>
-</tr>
-
-
-<tr>
-<td class="left">Param. #2</td>
-<td class="left">The size of the content of the new link.</td>
-</tr>
-
-
-<tr>
-<td class="left">Return value</td>
-<td class="left">The new link.</td>
-</tr>
-
-
-<tr>
-<td class="left">Libc functions</td>
-<td class="left">malloc(3), free(3)</td>
-</tr>
-</tbody>
-</table>
-
--   t&#95;lstdelone
+-   ft&#95;lstnew
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="left" />
+    
+    <col  class="left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="left">Prototype</td>
+    <td class="left">t&#95;list &#42; ft&#95;lstnew(void const &#42;content, size&#95;t content&#95;size);</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Description</td>
+    <td class="left">Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content&#95;size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content&#95;size is initialized to 0 even if the parameter content&#95;size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Param. #1</td>
+    <td class="left">The content to put in the new link.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Param. #2</td>
+    <td class="left">The size of the content of the new link.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Return value</td>
+    <td class="left">The new link.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Libc functions</td>
+    <td class="left">malloc(3), free(3)</td>
+    </tr>
+    </tbody>
+    </table>
+-   ft&#95;lstdelone
     
     <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
@@ -1293,7 +1292,7 @@ The following functions will allow you to manipulate your lists more easilly.
     </tr>
     </tbody>
     </table>
--   t&#95;lstdel
+-   ft&#95;lstdel
     
     <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
