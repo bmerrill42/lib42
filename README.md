@@ -57,7 +57,7 @@ with your own. Take the time to expand your libft throughout the year.
 ## Technical considerations<a id="sec-4-1" name="sec-4-1"></a>
 
 -   Your libft.h file can contain macros and typedefs if needed.
--   A string must ALWAYS end with a ’\\0’, even if it is not included in the function’s
+-   A string must ALWAYS end with a ’&#92;0’, even if it is not included in the function’s
 
 description, unless explicitly stated otherwise.
 -   It is forbidden to use global variables.
@@ -217,7 +217,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns a “fresh” string ending with ’\\0’. Each character of the string is initialized at ’\\0’. If the allocation fails the function returns NULL.</td>
+<td class="left">Allocates (with malloc(3)) and returns a “fresh” string ending with ’&#92;0’. Each character of the string is initialized at ’&#92;0’. If the allocation fails the function returns NULL.</td>
 </tr>
 
 
@@ -301,7 +301,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Sets every character of the string to the value ’\\0’.</td>
+<td class="left">Sets every character of the string to the value ’&#92;0’.</td>
 </tr>
 
 
@@ -583,7 +583,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Lexicographical comparison between s1 and s2 up to n characters or until a ’\\0’ is reached. If the 2 strings are identical, the function returns 1, or 0 otherwise.</td>
+<td class="left">Lexicographical comparison between s1 and s2 up to n characters or until a ’&#92;0’ is reached. If the 2 strings are identical, the function returns 1, or 0 otherwise.</td>
 </tr>
 
 
@@ -691,7 +691,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns a “fresh” string ending with ’\\0’, result of the concatenation of s1 and s2. If the allocation fails the function returns NULL.</td>
+<td class="left">Allocates (with malloc(3)) and returns a “fresh” string ending with ’&#92;0’, result of the concatenation of s1 and s2. If the allocation fails the function returns NULL.</td>
 </tr>
 
 
@@ -781,7 +781,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’\\0’, including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL. Example: ft&#95;strsplit("&#42;hello&#42;fellow&#42;&#42;&#42;students&#42;", ’&#42;’) returns the array ["hello", "fellow", "students"].</td>
+<td class="left">Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’&#92;0’, including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL. Example: ft&#95;strsplit("&#42;hello&#42;fellow&#42;&#42;&#42;students&#42;", ’&#42;’) returns the array ["hello", "fellow", "students"].</td>
 </tr>
 
 
@@ -829,7 +829,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocate (with malloc(3)) and returns a “fresh” string ending with ’\\0’ representing the integer n given as argument. Negative numbers must be supported. If the allocation fails, the function returns NULL.</td>
+<td class="left">Allocate (with malloc(3)) and returns a “fresh” string ending with ’&#92;0’ representing the integer n given as argument. Negative numbers must be supported. If the allocation fails, the function returns NULL.</td>
 </tr>
 
 
