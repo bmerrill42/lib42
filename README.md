@@ -66,7 +66,7 @@ description, unless explicitly stated otherwise.
 as static as stipulated in the Norm.
 -   You must pay attention to your types and wisely use the casts when needed, especially
 
-when a void\* type is involved. Generally speaking, avoid implicit casts.
+when a void&#42; type is involved. Generally speaking, avoid implicit casts.
 Example:
 
     char *str;
@@ -127,7 +127,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void \* ft&#95;memalloc(size&#95;t size);</td>
+<td class="left">void &#42; ft&#95;memalloc(size&#95;t size);</td>
 </tr>
 
 
@@ -169,7 +169,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;memdel(void \*\*ap);</td>
+<td class="left">void ft&#95;memdel(void &#42;&#42;ap);</td>
 </tr>
 
 
@@ -211,7 +211,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;strnew(size&#95;t size);</td>
+<td class="left">char &#42; ft&#95;strnew(size&#95;t size);</td>
 </tr>
 
 
@@ -253,7 +253,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;strdel(char \*\*as);</td>
+<td class="left">void ft&#95;strdel(char &#42;&#42;as);</td>
 </tr>
 
 
@@ -295,7 +295,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;strclr(char \*s);</td>
+<td class="left">void ft&#95;strclr(char &#42;s);</td>
 </tr>
 
 
@@ -337,7 +337,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;striter(char \*s, void (\*f)(char \*));</td>
+<td class="left">void ft&#95;striter(char &#42;s, void (&#42;f)(char &#42;));</td>
 </tr>
 
 
@@ -385,7 +385,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;striteri(char \*s, void (\*f)(unsigned int, char \*));</td>
+<td class="left">void ft&#95;striteri(char &#42;s, void (&#42;f)(unsigned int, char &#42;));</td>
 </tr>
 
 
@@ -433,7 +433,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;strmap(char const \*s, char (\*f)(char));</td>
+<td class="left">char &#42; ft&#95;strmap(char const &#42;s, char (&#42;f)(char));</td>
 </tr>
 
 
@@ -481,7 +481,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;strmapi(char const \*s, char (\*f)(unsigned int, char));</td>
+<td class="left">char &#42; ft&#95;strmapi(char const &#42;s, char (&#42;f)(unsigned int, char));</td>
 </tr>
 
 
@@ -529,7 +529,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">int ft&#95;strequ(char const \*s1, char const \*s2);</td>
+<td class="left">int ft&#95;strequ(char const &#42;s1, char const &#42;s2);</td>
 </tr>
 
 
@@ -577,7 +577,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">int ft&#95;strnequ(char const \*s1, char const \*s2, size&#95;t n);</td>
+<td class="left">int ft&#95;strnequ(char const &#42;s1, char const &#42;s2, size&#95;t n);</td>
 </tr>
 
 
@@ -631,7 +631,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;strsub(char const \*s, unsigned int start, size&#95;t len);</td>
+<td class="left">char &#42; ft&#95;strsub(char const &#42;s, unsigned int start, size&#95;t len);</td>
 </tr>
 
 
@@ -685,7 +685,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;strjoin(char const \*s1, char const \*s2);</td>
+<td class="left">char &#42; ft&#95;strjoin(char const &#42;s1, char const &#42;s2);</td>
 </tr>
 
 
@@ -733,7 +733,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;strtrim(char const \*s);</td>
+<td class="left">char &#42; ft&#95;strtrim(char const &#42;s);</td>
 </tr>
 
 
@@ -775,13 +775,13 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \*\* ft&#95;strsplit(char const \*s, char c);</td>
+<td class="left">char &#42;&#42; ft&#95;strsplit(char const &#42;s, char c);</td>
 </tr>
 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’\\0’, including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL. Example: ft&#95;strsplit("**hello\*fellow\*\*\*students**", ’\*’) returns the array ["hello", "fellow", "students"].</td>
+<td class="left">Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’\\0’, including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL. Example: ft&#95;strsplit("&#42;hello&#42;fellow&#42;&#42;&#42;students&#42;", ’&#42;’) returns the array ["hello", "fellow", "students"].</td>
 </tr>
 
 
@@ -823,7 +823,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft&#95;itoa(int n);</td>
+<td class="left">char &#42; ft&#95;itoa(int n);</td>
 </tr>
 
 
@@ -907,7 +907,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;putstr(char const \*s);</td>
+<td class="left">void ft&#95;putstr(char const &#42;s);</td>
 </tr>
 
 
@@ -949,7 +949,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;putendl(char const \*s);</td>
+<td class="left">void ft&#95;putendl(char const &#42;s);</td>
 </tr>
 
 
@@ -1081,7 +1081,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;putstr&#95;fd(char const \*s, int fd);</td>
+<td class="left">void ft&#95;putstr&#95;fd(char const &#42;s, int fd);</td>
 </tr>
 
 
@@ -1129,7 +1129,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft&#95;putendl&#95;fd(char const \*s, int fd);</td>
+<td class="left">void ft&#95;putendl&#95;fd(char const &#42;s, int fd);</td>
 </tr>
 
 
