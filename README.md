@@ -1197,13 +1197,14 @@ must be added to your libft.h file.
       struct s_list *next;
     } t_list;
 
-Here is a description of the fields of the t<sub>list</sub> struct:
--   content : The data contained in the link. The void \* allows to store any kind of data.
--   content<sub>size</sub> : The size of the data stored. The void \* type doesn’t allow you to know the size of the pointed data, as a consequence, it is necessary to save its size. For instance, the size of the string "42" is 3 bytes and the 32bits integer 42 has a size of 4 bytes.
+Here is a description of the fields of the t&#95;list struct:
+-   content : The data contained in the link. The void &#42; allows to store any kind of data.
+-   content&#95;size : The size of the data stored. The void &#42; type doesn’t allow you to know the size of the pointed data, as a consequence, it is necessary to save its size. For instance, the size of the string "42" is 3 bytes and the 32bits integer 42 has a size of 4 bytes.
 -   next : The next link’s address or NULL if it’s the last link.
 
 The following functions will allow you to manipulate your lists more easilly.
-\*ft<sub>lstnew</sub>
+
+\*ft&#95;lstnew
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1216,13 +1217,13 @@ The following functions will allow you to manipulate your lists more easilly.
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">t<sub>list</sub> \* ft<sub>lstnew</sub>(void const \*content, size<sub>t</sub> content<sub>size</sub>);</td>
+<td class="left">t&#95;list &#42; ft&#95;lstnew(void const &#42;content, size&#95;t content&#95;size);</td>
 </tr>
 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content<sub>size</sub> of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content<sub>size</sub> is initialized to 0 even if the parameter content<sub>size</sub> isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL.</td>
+<td class="left">Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content&#95;size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content&#95;size is initialized to 0 even if the parameter content&#95;size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL.</td>
 </tr>
 
 
@@ -1251,7 +1252,7 @@ The following functions will allow you to manipulate your lists more easilly.
 </tbody>
 </table>
 
--   t<sub>lstdelone</sub>
+-   t&#95;lstdelone
     
     <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
@@ -1264,13 +1265,13 @@ The following functions will allow you to manipulate your lists more easilly.
     <tbody>
     <tr>
     <td class="left">Prototype</td>
-    <td class="left">void ft<sub>lstdelone</sub>(t<sub>list</sub> \*\*alst, void (\*del)(void \*, size<sub>t</sub>));</td>
+    <td class="left">void ft&#95;lstdelone(t&#95;list &#42;&#42;alst, void (&#42;del)(void &#42;, size&#95;t));</td>
     </tr>
     
     
     <tr>
     <td class="left">Description</td>
-    <td class="left">Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function del given as a parameter, then frees the link’s memory using free(3). The memory of next musnt not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft<sub>memdel</sub> in the mandatory part).</td>
+    <td class="left">Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function del given as a parameter, then frees the link’s memory using free(3). The memory of next musnt not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft&#95;memdel in the mandatory part).</td>
     </tr>
     
     
@@ -1292,7 +1293,7 @@ The following functions will allow you to manipulate your lists more easilly.
     </tr>
     </tbody>
     </table>
--   t<sub>lstdel</sub>
+-   t&#95;lstdel
     
     <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
@@ -1305,13 +1306,13 @@ The following functions will allow you to manipulate your lists more easilly.
     <tbody>
     <tr>
     <td class="left">Prototype</td>
-    <td class="left">void ft<sub>lstdel</sub>(t<sub>list</sub> \*\*alst, void (\*del)(void \*, size<sub>t</sub>));</td>
+    <td class="left">void ft&#95;lstdel(t&#95;list &#42;&#42;alst, void (&#42;del)(void &#42;, size&#95;t));</td>
     </tr>
     
     
     <tr>
     <td class="left">Description</td>
-    <td class="left">Takes as a parameter the adress of a pointer to a link and frees the memory of this link and every successors of that link using the functions del and free(3). Finally the pointer to the link that was just freed must be set to NULL (quite similar to the function ft<sub>memdel</sub> from the mandatory part).</td>
+    <td class="left">Takes as a parameter the adress of a pointer to a link and frees the memory of this link and every successors of that link using the functions del and free(3). Finally the pointer to the link that was just freed must be set to NULL (quite similar to the function ft&#95;memdel from the mandatory part).</td>
     </tr>
     
     
@@ -1334,7 +1335,7 @@ The following functions will allow you to manipulate your lists more easilly.
     </tbody>
     </table>
 
-\*ft<sub>lstadd</sub>
+\*ft&#95;lstadd
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1347,7 +1348,7 @@ The following functions will allow you to manipulate your lists more easilly.
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>lstadd</sub>(t<sub>list</sub> \*\*alst, t<sub>list</sub> \*new);</td>
+<td class="left">void ft&#95;lstadd(t&#95;list &#42;&#42;alst, t&#95;list &#42;new);</td>
 </tr>
 
 
@@ -1382,7 +1383,7 @@ The following functions will allow you to manipulate your lists more easilly.
 </tbody>
 </table>
 
-\*ft<sub>lstiter</sub>
+\*ft&#95;lstiter
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1395,7 +1396,7 @@ The following functions will allow you to manipulate your lists more easilly.
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>lstiter</sub>(t<sub>list</sub> \*lst, void (\*f)(t<sub>list</sub> \*elem));</td>
+<td class="left">void ft&#95;lstiter(t&#95;list &#42;lst, void (&#42;f)(t&#95;list &#42;elem));</td>
 </tr>
 
 
@@ -1430,7 +1431,7 @@ The following functions will allow you to manipulate your lists more easilly.
 </tbody>
 </table>
 
-\*ft<sub>lstmap</sub>
+\*ft&#95;lstmap
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1443,7 +1444,7 @@ The following functions will allow you to manipulate your lists more easilly.
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">t<sub>list</sub> \* ft<sub>lstmap</sub>(t<sub>list</sub> \*lst, t<sub>list</sub> \* (\*f)(t<sub>list</sub> \*elem));</td>
+<td class="left">t&#95;list &#42; ft&#95;lstmap(t&#95;list &#42;lst, t&#95;list &#42; (&#42;f)(t&#95;list &#42;elem));</td>
 </tr>
 
 
@@ -1480,7 +1481,7 @@ The following functions will allow you to manipulate your lists more easilly.
 
 If you successfully completed both the mandatory and bonus sections of this project,
 we encourage you to add other functions that you believe could be useful to expand your
-library. For instance, a version of ft<sub>strsplit</sub> that returns a list instead of an array,
-the function ft<sub>lstfold</sub> similar to the function reduce in Python and the function
-List.fold<sub>left</sub> in OCaml (beware of the memory leak !). You can add functions to
+library. For instance, a version of ft&#95;strsplit that returns a list instead of an array,
+the function ft&#95;lstfold similar to the function reduce in Python and the function
+List.fold&#95;left in OCaml (beware of the memory leak !). You can add functions to
 manipulate arrays, stacks, files, maps, hashtables, etc. The limit is your imagination.
