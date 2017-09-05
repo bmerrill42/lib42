@@ -49,7 +49,7 @@ with your own. Take the time to expand your libft throughout the year.
 -   Your Makefile must at least contain the rules $(NAME), all, clean, fclean et re in the order that you will see fit.
 -   Your Makefile must compile your work with the flags -Wall, -Wextra and -Werror.
 -   Only the following libc functions are allowed : malloc(3), free(3) and write(2), and their usage is restricted. See below.
--   You must include the necessary include system files to use one or more of the three authorized functions in your .c files. The only additional system include file you are allowed to use is string.h to have access to the constant NULL and to the type size<sub>t</sub>. Everything else if forbidden.
+-   You must include the necessary include system files to use one or more of the three authorized functions in your .c files. The only additional system include file you are allowed to use is string.h to have access to the constant NULL and to the type size\\<sub>t</sub>. Everything else if forbidden.
 -   We encourage you to create test programs for your library even though this work won’t have to be submitted and won’t be graded. It will give you a chance to easily test your work and your peers’ work. You will find those tests especially useful during your defence. Indeed, during defence, you are free to use your tests and/or the tests of the peer you are correcting.
 
 # Mandatory part<a id="sec-4" name="sec-4"></a>
@@ -77,8 +77,8 @@ Example:
 
 In this first part, you must re-code a set of the libc functions, as defined in their
 man. Your functions will need to present the same prototype and behaviors as the originals.
-Your functions’ names must be prefixed by “ft<sub>”</sub>. For instance strlen becomes
-ft<sub>strlen</sub>.
+Your functions’ names must be prefixed by “ft\\<sub>”</sub>. For instance strlen becomes
+ft\\<sub>strlen</sub>.
 You must re-code the following functions:
 -   memset
 -   bzero
@@ -114,7 +114,7 @@ You must re-code the following functions:
 In this second part, you must code a set of functions that are either not included in the
 libc, or included in a different form. Some of these functions can be useful to write Part
 1’s functions.
--   ft<sub>memalloc</sub>
+-   ft\\<sub>memalloc</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -127,7 +127,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void \* ft<sub>memalloc</sub>(size<sub>t</sub> size);</td>
+<td class="left">void \* ft\\<sub>memalloc</sub>(size\\<sub>t</sub> size);</td>
 </tr>
 
 
@@ -156,7 +156,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>memdel</sub>
+-   ft\\<sub>memdel</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -169,7 +169,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>memdel</sub>(void \*\*ap);</td>
+<td class="left">void ft\\<sub>memdel</sub>(void \*\*ap);</td>
 </tr>
 
 
@@ -198,7 +198,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strnew</sub>
+-   ft\\<sub>strnew</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -211,7 +211,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>strnew</sub>(size<sub>t</sub> size);</td>
+<td class="left">char \* ft\\<sub>strnew</sub>(size\\<sub>t</sub> size);</td>
 </tr>
 
 
@@ -240,7 +240,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strdel</sub>
+-   ft\\<sub>strdel</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -253,7 +253,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>strdel</sub>(char \*\*as);</td>
+<td class="left">void ft\\<sub>strdel</sub>(char \*\*as);</td>
 </tr>
 
 
@@ -282,7 +282,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strclr</sub>
+-   ft\\<sub>strclr</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -295,7 +295,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>strclr</sub>(char \*s);</td>
+<td class="left">void ft\\<sub>strclr</sub>(char \*s);</td>
 </tr>
 
 
@@ -324,7 +324,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>striter</sub>
+-   ft\\<sub>striter</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -337,7 +337,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>striter</sub>(char \*s, void (\*f)(char \*));</td>
+<td class="left">void ft\\<sub>striter</sub>(char \*s, void (\*f)(char \*));</td>
 </tr>
 
 
@@ -372,7 +372,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>striteri</sub>
+-   ft\\<sub>striteri</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -385,7 +385,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>striteri</sub>(char \*s, void (\*f)(unsigned int, char \*));</td>
+<td class="left">void ft\\<sub>striteri</sub>(char \*s, void (\*f)(unsigned int, char \*));</td>
 </tr>
 
 
@@ -420,7 +420,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strmap</sub>
+-   ft\\<sub>strmap</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -433,7 +433,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>strmap</sub>(char const \*s, char (\*f)(char));</td>
+<td class="left">char \* ft\\<sub>strmap</sub>(char const \*s, char (\*f)(char));</td>
 </tr>
 
 
@@ -468,7 +468,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strmapi</sub>
+-   ft\\<sub>strmapi</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -481,7 +481,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>strmapi</sub>(char const \*s, char (\*f)(unsigned int, char));</td>
+<td class="left">char \* ft\\<sub>strmapi</sub>(char const \*s, char (\*f)(unsigned int, char));</td>
 </tr>
 
 
@@ -516,7 +516,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strequ</sub>
+-   ft\\<sub>strequ</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -529,7 +529,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">int ft<sub>strequ</sub>(char const \*s1, char const \*s2);</td>
+<td class="left">int ft\\<sub>strequ</sub>(char const \*s1, char const \*s2);</td>
 </tr>
 
 
@@ -564,7 +564,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strnequ</sub>
+-   ft\\<sub>strnequ</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -577,7 +577,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">int ft<sub>strnequ</sub>(char const \*s1, char const \*s2, size<sub>t</sub> n);</td>
+<td class="left">int ft\\<sub>strnequ</sub>(char const \*s1, char const \*s2, size\\<sub>t</sub> n);</td>
 </tr>
 
 
@@ -618,7 +618,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strsub</sub>
+-   ft\\<sub>strsub</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -631,7 +631,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>strsub</sub>(char const \*s, unsigned int start, size<sub>t</sub> len);</td>
+<td class="left">char \* ft\\<sub>strsub</sub>(char const \*s, unsigned int start, size\\<sub>t</sub> len);</td>
 </tr>
 
 
@@ -672,7 +672,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strjoin</sub>
+-   ft\\<sub>strjoin</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -685,7 +685,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>strjoin</sub>(char const \*s1, char const \*s2);</td>
+<td class="left">char \* ft\\<sub>strjoin</sub>(char const \*s1, char const \*s2);</td>
 </tr>
 
 
@@ -720,7 +720,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strtrim</sub>
+-   ft\\<sub>strtrim</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -733,7 +733,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>strtrim</sub>(char const \*s);</td>
+<td class="left">char \* ft\\<sub>strtrim</sub>(char const \*s);</td>
 </tr>
 
 
@@ -762,7 +762,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>strsplit</sub>
+-   ft\\<sub>strsplit</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -775,13 +775,13 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \*\* ft<sub>strsplit</sub>(char const \*s, char c);</td>
+<td class="left">char \*\* ft\\<sub>strsplit</sub>(char const \*s, char c);</td>
 </tr>
 
 
 <tr>
 <td class="left">Description</td>
-<td class="left">Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’\\0’, including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL. Example: ft<sub>strsplit</sub>("**hello\*fellow\*\*\*students**", ’\*’) returns the array ["hello", "fellow", "students"].</td>
+<td class="left">Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’\\0’, including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL. Example: ft\\<sub>strsplit</sub>("**hello\*fellow\*\*\*students**", ’\*’) returns the array ["hello", "fellow", "students"].</td>
 </tr>
 
 
@@ -810,7 +810,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>itoa</sub>
+-   ft\\<sub>itoa</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -823,7 +823,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">char \* ft<sub>itoa</sub>(int n);</td>
+<td class="left">char \* ft\\<sub>itoa</sub>(int n);</td>
 </tr>
 
 
@@ -852,7 +852,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putchar</sub>
+-   ft\\<sub>putchar</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -865,7 +865,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putchar</sub>(char c);</td>
+<td class="left">void ft\\<sub>putchar</sub>(char c);</td>
 </tr>
 
 
@@ -894,7 +894,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putstr</sub>
+-   ft\\<sub>putstr</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -907,7 +907,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putstr</sub>(char const \*s);</td>
+<td class="left">void ft\\<sub>putstr</sub>(char const \*s);</td>
 </tr>
 
 
@@ -936,7 +936,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putendl</sub>
+-   ft\\<sub>putendl</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -949,7 +949,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putendl</sub>(char const \*s);</td>
+<td class="left">void ft\\<sub>putendl</sub>(char const \*s);</td>
 </tr>
 
 
@@ -978,7 +978,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putnbr</sub>
+-   ft\\<sub>putnbr</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -991,7 +991,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putnbr</sub>(int n);</td>
+<td class="left">void ft\\<sub>putnbr</sub>(int n);</td>
 </tr>
 
 
@@ -1020,7 +1020,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putchar</sub><sub>fd</sub>
+-   ft\\<sub>putchar\\</sub><sub>fd</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1033,7 +1033,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putchar</sub><sub>fd</sub>(char c, int fd);</td>
+<td class="left">void ft\\<sub>putchar\\</sub><sub>fd</sub>(char c, int fd);</td>
 </tr>
 
 
@@ -1068,7 +1068,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putstr</sub><sub>fd</sub>
+-   ft\\<sub>putstr\\</sub><sub>fd</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1081,7 +1081,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putstr</sub><sub>fd</sub>(char const \*s, int fd);</td>
+<td class="left">void ft\\<sub>putstr\\</sub><sub>fd</sub>(char const \*s, int fd);</td>
 </tr>
 
 
@@ -1116,7 +1116,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putendl</sub><sub>fd</sub>
+-   ft\\<sub>putendl\\</sub><sub>fd</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1129,7 +1129,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 <tbody>
 <tr>
 <td class="left">Prototype</td>
-<td class="left">void ft<sub>putendl</sub><sub>fd</sub>(char const \*s, int fd);</td>
+<td class="left">void ft\\<sub>putendl\\</sub><sub>fd</sub>(char const \*s, int fd);</td>
 </tr>
 
 
@@ -1164,50 +1164,50 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
--   ft<sub>putnbr</sub><sub>fd</sub>
-    
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="left" />
-    
-    <col  class="left" />
-    </colgroup>
-    <tbody>
-    <tr>
-    <td class="left">Prototype</td>
-    <td class="left">void ft<sub>putnbr</sub><sub>fd</sub>(int n, int fd);</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="left">Description</td>
-    <td class="left">Outputs the integer n to the file descriptor fd.</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="left">Param. #1</td>
-    <td class="left">The integer to print.</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="left">Param. #2</td>
-    <td class="left">The file descriptor.</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="left">Return value</td>
-    <td class="left">None.</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="left">Libc functions</td>
-    <td class="left">write(2).</td>
-    </tr>
-    </tbody>
-    </table>
+-   ft\\<sub>putnbr\\</sub><sub>fd</sub>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">Prototype</td>
+<td class="left">void ft\\<sub>putnbr\\</sub><sub>fd</sub>(int n, int fd);</td>
+</tr>
+
+
+<tr>
+<td class="left">Description</td>
+<td class="left">Outputs the integer n to the file descriptor fd.</td>
+</tr>
+
+
+<tr>
+<td class="left">Param. #1</td>
+<td class="left">The integer to print.</td>
+</tr>
+
+
+<tr>
+<td class="left">Param. #2</td>
+<td class="left">The file descriptor.</td>
+</tr>
+
+
+<tr>
+<td class="left">Return value</td>
+<td class="left">None.</td>
+</tr>
+
+
+<tr>
+<td class="left">Libc functions</td>
+<td class="left">write(2).</td>
+</tr>
+</tbody>
+</table>
