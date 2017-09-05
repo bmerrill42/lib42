@@ -56,13 +56,16 @@ with your own. Take the time to expand your libft throughout the year.
 
 ## Technical considerations<a id="sec-4-1" name="sec-4-1"></a>
 
-• Your libft.h file can contain macros and typedefs if needed.
-• A string must ALWAYS end with a ’\\0’, even if it is not included in the function’s
+-   Your libft.h file can contain macros and typedefs if needed.
+-   A string must ALWAYS end with a ’\\0’, even if it is not included in the function’s
+
 description, unless explicitly stated otherwise.
-• It is forbidden to use global variables.
-• If you need sub-functions to write a complex function, you must define these subfunctions
+-   It is forbidden to use global variables.
+-   If you need sub-functions to write a complex function, you must define these subfunctions
+
 as static as stipulated in the Norm.
-• You must pay attention to your types and wisely use the casts when needed, especially
+-   You must pay attention to your types and wisely use the casts when needed, especially
+
 when a void\* type is involved. Generally speaking, avoid implicit casts.
 Example:
 
@@ -77,41 +80,41 @@ man. Your functions will need to present the same prototype and behaviors as the
 Your functions’ names must be prefixed by “ft<sub>”</sub>. For instance strlen becomes
 ft<sub>strlen</sub>.
 You must re-code the following functions:
-• memset
-• bzero
-• memcpy
-• memccpy
-• memmove
-• memchr
-• memcmp
-• strlen
-• strdup
-• strcpy
-• strncpy
-• strcat
-• strncat
-• strlcat
-• strchr
-• strrchr
-• strstr
-• strnstr
-• strcmp
-• strncmp
-• atoi
-• isalpha
-• isdigit
-• isalnum
-• isascii
-• isprint
-• toupper
-• tolower
+-   memset
+-   bzero
+-   memcpy
+-   memccpy
+-   memmove
+-   memchr
+-   memcmp
+-   strlen
+-   strdup
+-   strcpy
+-   strncpy
+-   strcat
+-   strncat
+-   strlcat
+-   strchr
+-   strrchr
+-   strstr
+-   strnstr
+-   strcmp
+-   strncmp
+-   atoi
+-   isalpha
+-   isdigit
+-   isalnum
+-   isascii
+-   isprint
+-   toupper
+-   tolower
 
 ## Part 2 - Additional functions<a id="sec-4-3" name="sec-4-3"></a>
 
 In this second part, you must code a set of functions that are either not included in the
 libc, or included in a different form. Some of these functions can be useful to write Part
 1’s functions.
-• ft<sub>memalloc</sub>
+-   ft<sub>memalloc</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -153,7 +156,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>memdel</sub>
+-   ft<sub>memdel</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -195,7 +198,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strnew</sub>
+-   ft<sub>strnew</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -237,7 +240,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strdel</sub>
+-   ft<sub>strdel</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -279,7 +282,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strclr</sub>
+-   ft<sub>strclr</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -321,7 +324,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>striter</sub>
+-   ft<sub>striter</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -369,7 +372,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>striteri</sub>
+-   ft<sub>striteri</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -417,7 +420,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strmap</sub>
+-   ft<sub>strmap</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -465,7 +468,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strmapi</sub>
+-   ft<sub>strmapi</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -513,7 +516,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strequ</sub>
+-   ft<sub>strequ</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -561,7 +564,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strnequ</sub>
+-   ft<sub>strnequ</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -615,7 +618,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strsub</sub>
+-   ft<sub>strsub</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -669,7 +672,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strjoin</sub>
+-   ft<sub>strjoin</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -717,7 +720,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strtrim</sub>
+-   ft<sub>strtrim</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -759,7 +762,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>strsplit</sub>
+-   ft<sub>strsplit</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -807,7 +810,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>itoa</sub>
+-   ft<sub>itoa</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -849,7 +852,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putchar</sub>
+-   ft<sub>putchar</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -891,7 +894,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putstr</sub>
+-   ft<sub>putstr</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -933,7 +936,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putendl</sub>
+-   ft<sub>putendl</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -975,7 +978,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putnbr</sub>
+-   ft<sub>putnbr</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1017,7 +1020,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putchar</sub><sub>fd</sub>
+-   ft<sub>putchar</sub><sub>fd</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1065,7 +1068,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putstr</sub><sub>fd</sub>
+-   ft<sub>putstr</sub><sub>fd</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1113,7 +1116,7 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putendl</sub><sub>fd</sub>
+-   ft<sub>putendl</sub><sub>fd</sub>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1161,50 +1164,50 @@ libc, or included in a different form. Some of these functions can be useful to 
 </tbody>
 </table>
 
-• ft<sub>putnbr</sub><sub>fd</sub>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="left">Prototype</td>
-<td class="left">void ft<sub>putnbr</sub><sub>fd</sub>(int n, int fd);</td>
-</tr>
-
-
-<tr>
-<td class="left">Description</td>
-<td class="left">Outputs the integer n to the file descriptor fd.</td>
-</tr>
-
-
-<tr>
-<td class="left">Param. #1</td>
-<td class="left">The integer to print.</td>
-</tr>
-
-
-<tr>
-<td class="left">Param. #2</td>
-<td class="left">The file descriptor.</td>
-</tr>
-
-
-<tr>
-<td class="left">Return value</td>
-<td class="left">None.</td>
-</tr>
-
-
-<tr>
-<td class="left">Libc functions</td>
-<td class="left">write(2).</td>
-</tr>
-</tbody>
-</table>
+-   ft<sub>putnbr</sub><sub>fd</sub>
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="left" />
+    
+    <col  class="left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="left">Prototype</td>
+    <td class="left">void ft<sub>putnbr</sub><sub>fd</sub>(int n, int fd);</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Description</td>
+    <td class="left">Outputs the integer n to the file descriptor fd.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Param. #1</td>
+    <td class="left">The integer to print.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Param. #2</td>
+    <td class="left">The file descriptor.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Return value</td>
+    <td class="left">None.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="left">Libc functions</td>
+    <td class="left">write(2).</td>
+    </tr>
+    </tbody>
+    </table>
